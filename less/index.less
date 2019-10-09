@@ -62,27 +62,49 @@ html body{
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
+	nav{
+		a:hover{
+			color: #b76e79;
+		}
+	}
+ 	 
   }
   .navigation a {
 	text-decoration: none;
 	padding: 10px;
 	font-size: 1.1rem;
-	color: black;
+	color: gray;
   }
-  .name{
-	  display: flex;
-	  justify-content: center;
-	  color: #b76e79;
-	  padding: 10px;
-	  font-size: 2.0rem;
+
+  header{
+	  background-color: lightgray;
+	  .intro{
+		.name{
+			display: flex;
+			justify-content: center;
+			color: #b76e79;
+			padding: 10px;
+			font-size: 2.0rem;
+		}
+		  .first-paragraph{
+			  display: flex;
+			  flex-direction: row-reverse;
+			  text-align: center;
+			  font-size: 1.2rem;
+			  color:#b76e79 ;
+			  padding: 15px;
+			  width: 80%;
+			  margin: 0 auto;
+		  }
+		  .front-img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20%;
+			border: 1px solid black;
+		  }
+	   
+	  }
+	  
   }
-	.first-paragraph{
-		display: flex;
-		justify-content: center;
-		font-size: 1.3rem;
-	}
-
-
-
-
 
