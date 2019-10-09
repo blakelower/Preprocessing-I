@@ -130,18 +130,31 @@ table {
 * {
   box-sizing: border-box;
 }
-html {
+html body {
   width: 80%;
   margin: 0 auto;
+  font-size: 62.5%;
 }
 .navigation {
   display: flex;
-  flex-direction: row;
-  padding: 15px;
+  flex-direction: column;
+  padding: 10px;
 }
 .navigation a {
   text-decoration: none;
   padding: 10px;
   font-size: 1.1rem;
   color: black;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  color: #b76e79;
+  padding: 10px;
+  font-size: 2rem;
+}
+.first-paragraph {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
 }
