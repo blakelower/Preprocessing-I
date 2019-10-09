@@ -49,6 +49,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
@@ -58,7 +59,17 @@ html body{
 	margin: 0 auto;
 	font-size: 62.5%;
 }
+@keyframes slideInFromLeft {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
 .navigation {
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+ 
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
@@ -79,12 +90,15 @@ html body{
   header{
 	  background-color: lightgray;
 	  .intro{
+		animation: 2s ease-out 0s 1 slideInFromLeft;
+ 
 		.name{
 			display: flex;
 			justify-content: center;
 			color: #b76e79;
 			padding: 10px;
 			font-size: 2.0rem;
+			animation: right_to_left 3s ease;
 		}
 		  .first-paragraph{
 			  display: flex;
@@ -95,6 +109,7 @@ html body{
 			  padding: 15px;
 			  width: 80%;
 			  margin: 0 auto;
+			  
 		  }
 		  .front-img{
 			display: block;
@@ -103,8 +118,30 @@ html body{
 			width: 20%;
 			border: 1px solid black;
 		  }
-	   
 	  }
 	  
   }
+  .skills{
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+	display: flex;
+	font-size: 1.3rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 70px;
+	line-height: 1.7rem;
+  }
+  .skills section{
+	width: 50%;
+	padding: 0 16px;
+  }
+	footer { 
+		background: lightgray; 
+		clear: both;
+		padding-bottom: 1%;
+		text-align: center;
+		font-size: 1.4rem;
+		color: #b76e79;
+	  }
+
+
 
